@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Salomatlik maktabi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .text {
+        font-size: 25px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-  
+  <div>
+    <p class="text-3xl font-bold underline">
+      Hello world!
+    </p>
+    <p class="text underline">Lorem ipsum dolor sit amet.</p>
+  </div>
+
+
 </body>
+
 </html>
