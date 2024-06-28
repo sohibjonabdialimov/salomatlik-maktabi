@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.common_title{
+  font-size: 28px;
+  font-size: #333;
+  font-weight: 700;
+  margin: 40px 0;
+  text-align: center;
+}
+.common_btn{
+
+}
+.common_subtitle{
+
+}
+
+.login{
+  /* box-shadow: 0 0 0 34px rgba(0,0,0,0.1); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 40px;
+  border-radius: 15px;
+}
+.bg_img1 {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("/img/1.jpg");
+  background-size: 100% 580px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.bg_img2 {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("/img/2.avif");
+  background-size: 100% 580px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.bg_img3 {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("/img/3.avif");
+  background-size: 100% 580px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.card_wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: space-between;
+  gap: 50px;
+}
+@media (max-width: 500px){
+  .common_title{
+    font-size: 24px;
+    font-size: #333;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+  .card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .bg_img1 {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("/img/1.jpg");
+    background-size: 100% 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .bg_img2 {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("/img/2.avif");
+    background-size: 100% 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .bg_img3 {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("/img/3.avif");
+    background-size: 100% 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .login{
+    box-shadow: none;
+    padding: 20px;
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
