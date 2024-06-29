@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salomatlik maktabi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .text {
+          font-size: 25px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              login: "#0084A8FF",
+              hover_login: "#046884",
+            },
+            backgroundColor: {
+              login: "#0084A8FF",
+              hover_login: "#046884",
+            },
+            borderColor: {
+              login: "#0084A8FF",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div
+      class="text-login bg-login min-h-[100dvh] flex justify-center items-center"
+    >
+      <div
+        class="flex items-center sm:w-[35%] w-[90%] mx-auto login bg-white rounded-lg"
+      >
+        <form class="w-full pb-12">
+          <h1 class="common_title">Emailni tasdiqlash</h1>
+          <div class="mb-5">
+            <label
+              for="text"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Emailga yuborilgan kodni kiriting</label
+            >
+            <input
+              type="text"
+              id="text"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-login block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-login dark:shadow-sm-light"
+              placeholder="******"
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="text-white bg-login hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm min-w-36 px-4 py-2.5 text-center"
+          >
+            Tasdiqlash
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</html>

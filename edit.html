@@ -44,13 +44,23 @@
       <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-2">
         <a href="./index.html" class="flex items-center sm:space-x-3 space-x-1 rtl:space-x-reverse">
           <img src="https://flowbite.com/docs/images/logo.svg" class="sm:h-8 h-4" alt="Flowbite Logo" />
-          <span class="self-center sm:text-2xl text-sm font-semibold whitespace-nowrap dark:text-white">Salomatlik maktabi</span>
+          <span class="self-center sm:text-2xl text-sm font-semibold whitespace-nowrap dark:text-white">Salomatlik
+            maktabi</span>
         </a>
         <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
           <a href="./login.html"
-            class="text-login hover:text-hover_login hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xs sm:text-sm px-2 py-2 md:px-5 md:py-2.5 focus:outline-none">Kirish</a>
+            class="text-login hover:text-hover_login dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xs sm:text-sm px-[5px] py-[5px] md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Kirish</a>
           <a href="./register.html"
-            class="text-white bg-login hover:bg-hover_login focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs sm:text-sm px-2 py-2 md:px-5 md:py-2.5 focus:outline-none">Ro'yxatdan o'tish</a>
+            class="text-white bg-login hover:bg-hover_login focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs sm:text-sm px-[5px] py-[5px] md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Ro'yxatdan
+            o'tish</a>
+          <div class="text-center">
+            <button style="border: 2px solid #0084A8FF;"
+              class="text-white bg-white rounded-full font-medium text-sm sm:p-2 p-[2px] focus:outline-none"
+              type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example"
+              data-drawer-placement="right" aria-controls="drawer-right-example">
+              <img class="sm:w-[20px] w-[8px]" src="./img/pro.png" alt="">
+            </button>
+          </div>
           <button data-collapse-toggle="mega-menu" type="button"
             class="inline-flex items-center p-2 w-8 h-8 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="mega-menu" aria-expanded="false">
@@ -116,19 +126,61 @@
           </ul>
         </div>
       </div>
+
+
+
+      <div id="drawer-right-example"
+        class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800"
+        tabindex="-1" aria-labelledby="drawer-right-label">
+        <h5 id="drawer-right-label"
+          class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg
+            class="w-4 h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            viewBox="0 0 20 20">
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+          </svg>Foydalanuvchi profili</h5>
+        <button type="button" data-drawer-hide="drawer-right-example" aria-controls="drawer-right-example"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+          </svg>
+          <span class="sr-only">Close menu</span>
+        </button>
+        <h2 class="mb-6 text-sm text-gray-500 dark:text-gray-400">Sohibjon Abdialimov</h2>
+        <h2 class="mb-6 text-sm text-gray-500 dark:text-gray-400">sohibjonabdialimov@gmail.com</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <a href="./login.html"
+            class="px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-login focus:z-10 focus:ring-4 focus:ring-gray-100">Chiqish</a>
+          <a href="#"
+            class="px-4 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Tahrirlash
+            <!-- <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg> -->
+          </a>
+        </div>
+      </div>
     </nav>
 
 
-    <section class="mt-10">
-      <form class="sm:max-w-md max-w-[90%] mx-auto">
-        <h1 class="common_title">Formula bo'yicha hisoblash</h1>
+    <section class="sm:mt-10 mt-5">
+      <form style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="sm:max-w-lg max-w-[90%] mx-auto sm:py-10 py-5 sm:px-14 px-5 rounded-xl">
+        <h1 class="common_title mt-2">Profilni tahrirlash</h1>
         <div class="relative z-0 w-full mb-8 group">
-          <input type="number" name="repeat_password" id="floating_repeat_password"
+          <input type="text" name="repeat_password" id="fullname"
             class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-login peer"
             placeholder=" " required />
-          <label for="floating_repeat_password"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-login peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Qiymatni
-            kiriting</label>
+          <label for="fullname"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-login peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Ism-familiya</label>
+        </div>
+        <div class="relative z-0 w-full mb-8 group">
+          <input type="email" name="repeat_password" id="email"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-login peer"
+            placeholder=" " required />
+          <label for="email"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-login peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
         </div>
         <div class="grid md:grid-cols-2 md:gap-8">
           <div class="relative z-0 w-full mb-8 group">
@@ -148,32 +200,12 @@
               kiriting</label>
           </div>
         </div>
-        <div class="grid md:grid-cols-2 md:gap-8">
-          <div class="relative z-0 w-full mb-8 group">
-            <input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone"
-              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-login peer"
-              placeholder=" " required />
-            <label for="floating_phone"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-login peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Qiymatni kiriting</label>
-          </div>
-          <div class="relative z-0 w-full mb-8 group">
-            <input type="text" name="floating_company" id="floating_company"
-              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-login peer"
-              placeholder=" " required />
-            <label for="floating_company"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-login peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Qiymatni kiriting</label>
-          </div>
-        </div>
         <button type="submit"
-          class="text-white bg-login hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Natijani
-          ko'rish</button>
-          <div class="my-5">
-            <p class="text-lg">Natija: <span class="font-semibold">45%</span></p>
-          </div>
+          class="text-white bg-login hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Saqlash</button>
       </form>
     </section>
 
-    <footer class="bg-gray-900 mt-20">
+    <footer class="bg-gray-900 sm:mt-20 mt-10">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">

@@ -2,28 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.common_title{
+.common_title {
   font-size: 28px;
   font-size: #333;
   font-weight: 700;
   margin: 40px 0;
   text-align: center;
 }
-.common_btn{
 
-}
-.common_subtitle{
-
-}
-
-.login{
-  /* box-shadow: 0 0 0 34px rgba(0,0,0,0.1); */
+.login {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 20px 40px;
   border-radius: 15px;
@@ -46,20 +38,112 @@
   width: 100%;
   background-repeat: no-repeat;
 }
-.card_wrapper{
+.card_wrapper {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: space-between;
   gap: 50px;
 }
-@media (max-width: 500px){
-  .common_title{
+.read_books {
+  height: 500px;
+  overflow-y: scroll;
+  background-color: blanchedalmond;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.read_books::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.read_books::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+.read_books::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+.contact_form input:focus,
+.contact_form textarea:focus {
+  border: 2px solid #0084a8ff;
+}
+.c_grid{
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+  "d1 d1 d2 d3"
+  "d1 d1 d4 d5"
+}
+.grid_big_box{
+  background-color: #EEF1F3FF;
+  padding: 25px;
+  border-radius: 15px;
+}
+.grid_box{
+  background-color: #EEF1F3FF;
+  padding: 25px;
+  border-radius: 15px;
+}
+.grid_big_box img, .grid_box img{
+  width: 50px;
+  margin-bottom: 17px;
+}
+.grid_big_box img{
+  width: 80px;
+  margin-bottom: 20px;
+}
+.grid_box h2{
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.grid_box p{
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 15px;
+}
+.grid_big_box p{
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.grid_1{
+  grid-area: d1;
+  width: 100%;
+}
+.grid_2{
+  grid-area: d2;
+  width: 100%;
+}
+.grid_3{
+  grid-area: d3;
+  width: 100%;
+}
+.grid_4{
+  grid-area: d4;
+  width: 100%;
+}
+.grid_5{
+  grid-area: d5;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .common_title {
     font-size: 24px;
     font-size: #333;
     font-weight: 700;
     margin: 20px 0;
   }
-  .card_wrapper{
+  .card_wrapper {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     justify-content: space-between;
@@ -83,10 +167,45 @@
     width: 100%;
     background-repeat: no-repeat;
   }
-  .login{
+  .login {
     box-shadow: none;
     padding: 20px;
     margin-top: 0;
     border-radius: 0;
+  }
+
+  .c_grid{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "d1"
+    "d2"
+    "d3"
+    "d4"
+    "d5"
+  }
+  .grid_big_box{
+    padding: 15px;
+  }
+  .grid_box{
+    padding: 15px;
+  }
+  .grid_big_box img, .grid_box img{
+    width: 50px;
+    margin-bottom: 17px;
+  }
+  .grid_big_box img{
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  .grid_box h2{
+    font-size: 20px;
+  }
+  .grid_box p{
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .grid_big_box p{
+    margin-bottom: 20px;
   }
 }
