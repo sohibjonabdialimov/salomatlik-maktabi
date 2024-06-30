@@ -5,13 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Salomatlik maktabi</title>
+  <!-- tailwind css -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- flowbite -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <!-- tailwind custom style -->
   <style type="text/tailwindcss">
     @layer utilities {
         .text {
@@ -21,6 +28,7 @@
         }
       }
     </style>
+    <!-- tailwind css custom class -->
   <script>
     tailwind.config = {
       theme: {
@@ -41,6 +49,7 @@
     }
   </script>
   <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -165,6 +174,7 @@
         </div>
       </div>
     </nav>
+
 
     <div id="animation-carousel" class="relative w-full" data-carousel="slide">
       <!-- Carousel wrapper -->
@@ -315,16 +325,6 @@
           </div>
         </div>
       </div>
-      <!-- Slider indicators -->
-      <!-- <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-          data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-          data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-          data-carousel-slide-to="2"></button>
-      </div> -->
-      <!-- Slider controls -->
       <button type="button"
         class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev>
@@ -353,122 +353,251 @@
       </button>
     </div>
 
-    <section class="container max-w-screen-xl mx-auto p-2 mb-20">
-      <h1 class="my-5">Cards</h1>
-      <div class="card_wrapper">
-        <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img class="rounded-t-lg w-full" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
-              alt="" />
-          </a>
-          <div class="p-5">
+    <div class="mt-20">
+      <div class="swiper mySwiper max-w-screen-xl mx-auto p-2">
+        <h1 class="common_subtitle sm:mt-5 mt-0">Mashhur kategoriyalar</h1>
+        <div class="swiper-wrapper sm:mb-20 mb-8">
+          <div
+            class="swiper-slide bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
+              <img class="rounded-t-lg w-full" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
+                alt="" />
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021
-              so far, in reverse chronological order.
-            </p>
-            <a href="#"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-login dark:focus:ring-blue-800">
-              Read more
-              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-login dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="rounded-t-lg w-full" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
+                alt="" />
             </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-login dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="rounded-t-lg w-full" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
+                alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-login dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="rounded-t-lg w-full" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
+                alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-login dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="rounded-t-lg w-full" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
+                alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-login dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="rounded-t-lg w-full" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
+                alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-login dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img class="rounded-t-lg w-full" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
-              alt="" />
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="my-10">
+      <div class="slider">
+        <div class="slide-track">
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" /> -->
+            <p>Adabiyotlar</p>
           </a>
-          <div class="p-5">
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021
-              so far, in reverse chronological order.
-            </p>
-            <a href="#"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-login dark:focus:ring-blue-800">
-              Read more
-              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img class="rounded-t-lg w-full" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
-              alt="" />
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" /> -->
+            <p>Mualliflar</p>
           </a>
-          <div class="p-5">
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021
-              so far, in reverse chronological order.
-            </p>
-            <a href="#"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-login dark:focus:ring-blue-800">
-              Read more
-              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img class="rounded-t-lg w-full" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
-              alt="" />
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
           </a>
-          <div class="p-5">
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021
-              so far, in reverse chronological order.
-            </p>
-            <a href="#"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-login rounded-lg hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-login dark:focus:ring-blue-800">
-              Read more
-              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
-          </div>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
+          <a href="./cards.html" class="slide">
+            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" /> -->
+            <p>Manaviyat va san'at</p>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+
+    
 
     <section class="c_grid max-w-screen-xl mx-auto p-2 sm:mb-32 mb-16">
       <div class="grid_1 grid_big_box">
         <div>
           <img src="./img/g2.svg" alt="">
         </div>
-        <p>O'zbekiston Respublikasi oliy ta'lim va ilmiy tadqiqot muassasalarining yagona elektron kutubxona axborot tizimi</p>
+        <p>O'zbekiston Respublikasi oliy ta'lim va ilmiy tadqiqot muassasalarining yagona elektron kutubxona axborot
+          tizimi</p>
         <p>
           Elektron kutubxonada oliy ta'lim va ilmiy tadqiqot muassasalarining o'quv adabiyotlari, monografiyalari,
           dissertatsiyalari va ilmiy maqolalari jamlangan</p>
@@ -605,8 +734,48 @@
       </div>
     </footer>
 
-  </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  // var swiper = new Swiper(".mySwiper", {
+  //   cssMode: true,
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //   },
+  //   mousewheel: true,
+  //   keyboard: true,
+  // });
+</script>
 
 </html>
