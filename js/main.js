@@ -4,6 +4,7 @@ const kg = document.getElementById("kg");
 const m = document.getElementById("m");
 const show_book = document.getElementById("show_book");
 const read_book_btn = document.getElementById("read_book_btn");
+const close_book_btn = document.getElementById("close_book_btn");
 
 
 form?.addEventListener("submit", (e) => {
@@ -15,8 +16,12 @@ form?.addEventListener("submit", (e) => {
 
 read_book_btn.addEventListener("click", () => {
   show_book.style.display = "flex";
+  close_book_btn.style.display = "flex";
+  read_book_btn.style.display = "none";
+})
+close_book_btn.addEventListener("click", () => {
+  show_book.style.display = "none";
+  close_book_btn.style.display = "none";
+  read_book_btn.style.display = "flex";
 })
 
-function onHandle(e){
-  console.log("click");
-}
