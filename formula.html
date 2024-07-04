@@ -191,9 +191,9 @@
     </nav>
     <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
 
-    <section class="my-16 sm:mt-16 sm:mb-28">
+    <section class="my-16 sm:mt-16 sm:mb-28 flex mx-auto items-center justify-center gap-10">
       <form id="form"
-        class="sm:max-w-lg max-w-[90%] mx-auto rounded-md p-8 pt-5 sm:px-14 px-6 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
+        class="sm:max-w-lg max-w-[90%]  rounded-lg p-8 pt-5 sm:px-14 px-6 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
         <h1 class="common_title">Formula bo'yicha hisoblash</h1>
         <div class="relative z-0 w-full mb-8 group">
           <input id="kg" type="number" name="repeat_password" id="floating_repeat_password"
@@ -211,40 +211,6 @@
             class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-login peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Bo'yni
             uzunligini kiriting (metrlarda)</label>
         </div>
-        <!-- <div class="grid md:grid-cols-2 md:gap-8">
-          <div class="relative z-0 w-full mb-8 group">
-            <input type="text" name="floating_first_name" id="floating_first_name"
-              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-login peer"
-              placeholder=" " required />
-            <label for="floating_first_name"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-login peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Qiymatni
-              kiriting</label>
-          </div>
-          <div class="relative z-0 w-full mb-8 group">
-            <input type="text" name="floating_last_name" id="floating_last_name"
-              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-login peer"
-              placeholder=" " required />
-            <label for="floating_last_name"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-login peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Qiymatni
-              kiriting</label>
-          </div>
-        </div>
-        <div class="grid md:grid-cols-2 md:gap-8">
-          <div class="relative z-0 w-full mb-8 group">
-            <input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone"
-              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-login peer"
-              placeholder=" " required />
-            <label for="floating_phone"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-login peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Qiymatni kiriting</label>
-          </div>
-          <div class="relative z-0 w-full mb-8 group">
-            <input type="text" name="floating_company" id="floating_company"
-              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-login peer"
-              placeholder=" " required />
-            <label for="floating_company"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-login peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Qiymatni kiriting</label>
-          </div>
-        </div> -->
         <button id="resultBtn" type="submit"
           class="text-white bg-login hover:bg-hover_login focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Natijani
           ko'rish</button>
@@ -252,6 +218,7 @@
           <p class="text-lg">Natija: <span id="resultSpan" class="font-semibold"></span></p>
         </div>
       </form>
+      <img class="h-[420px] rounded-lg object-cover" src="https://thumbs.dreamstime.com/b/sun-going-down-behind-bare-leafless-tree-tree-silhouetted-sunset-215241866.jpg" alt="">
     </section>
 
     <footer class="flex items-center justify-center">
