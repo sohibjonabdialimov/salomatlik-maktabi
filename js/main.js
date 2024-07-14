@@ -24,4 +24,3 @@ close_book_btn.addEventListener("click", () => {
   close_book_btn.style.display = "none";
   read_book_btn.style.display = "flex";
 })
-
