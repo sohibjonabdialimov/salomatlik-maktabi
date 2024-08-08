@@ -27,6 +27,9 @@ a{
   color: #333;
   font-weight: 700;
 }
+.search_btn{
+  background-color: #0084A8FF !important;
+}
 
 /* Infinite carousel text start */
 
